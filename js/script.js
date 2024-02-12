@@ -14,6 +14,11 @@ function moveButton() {
 	test();
 }
 
+button_no.addEventListener('click', (e) => {
+	e.preventDefault();
+	moveButton();
+});
+
 const test = () => {
 	const imageWrapper = document.createElement('div');
 	imageWrapper.classList.add('imageWrapper');
